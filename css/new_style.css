@@ -1,20 +1,4 @@
-.menu {
-  position: relative;
-  background: #4855a0;
-  height: 35px;
-  box-shadow: 0 10px 11px #000;
-  z-index: 200
-}
-#main {
-  position: relative;
-  background-image: url("../images/canoe.jpg");
-  background-color: #ccc;
-  height: 500px;
-  width: 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover
-}
+/* universal rule*/
 * {
   box-sizing: border-box;
   margin: 0
@@ -24,27 +8,16 @@ body {
   font-family: Arial;
   background: #fff
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: justify
-}
-.flex-item-left {
-  margin: 3px;
-  border: 1px solid #030000;
-  padding: 10px;
-  background-color: #fff;
-  flex: 48%
-}
-.flex-item-right {
-  margin: 3px;
-  border: 1px solid #030000;
-  padding: 10px;
-  background-color: #fff;
-  flex: 48%
-}
 h1 {
   text-align: center
+}
+/* the menu styles */
+.menu {
+  position: relative;
+  background: #4855a0;
+  height: 35px;
+  box-shadow: 0 10px 11px #000;
+  z-index: 200
 }
 .menu #paddle {
   height: 30px;
@@ -71,6 +44,18 @@ h1 {
   color: #fff;
   font-size: 25px
 }
+/* the main styles and main_text*/
+#main {
+  position: relative;
+  background-image: url("../images/canoe.jpg");
+  background-color: #ccc;
+  height: 500px;
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
 #main_text {
   text-align: left;
   color: #100101;
@@ -90,6 +75,29 @@ h1 {
   left: 50%;
   transform: translate(-50%,-50%)
 }
+/* flex styles*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify
+}
+.flex-item-left {
+  margin: 3px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: #fff;
+  flex: 48%
+}
+.flex-item-right {
+  margin: 3px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: #fff;
+  flex: 48%
+}
+
+
+
 .dropdown {
   padding: 10px;
   position: relative;
@@ -112,6 +120,10 @@ h1 {
   text-align: center;
   background: #4855a0
 }
+
+
+
+
 @media (max-width:1200px) {
   #menu h2 {
     font-size: 20px

@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  font-family: Arial;
+  font-family:  Helvetica,Arial,git sans-serif;
   background: #fff
 }
 h1 {
@@ -48,6 +48,7 @@ h1 {
 #main {
   position: relative;
   background-image: url("../images/canoe.jpg");
+  clip-path: circle(60% at 50% 50%);
   background-color: #ccc;
   height: 500px;
   width: 100%;
@@ -79,24 +80,30 @@ h1 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  text-align: justify
+  text-align:left;
+  
 }
 .flex-item-left {
-  margin: 3px;
+  box-shadow: 10px 10px 11px #000;
+  margin: 25 px;
   border: 1px solid #030000;
   padding: 10px;
-  background-color: #fff;
-  flex: 48%
+  background-color: rgb(244, 138, 138);
+  flex: 48%;
+  border-radius: 25px;
 }
 .flex-item-right {
+  box-shadow: 10px 10px 11px #000;
   margin: 3px;
   border: 1px solid #030000;
   padding: 10px;
-  background-color: #fff;
-  flex: 48%
+  background-color: rgb(244, 138, 138);
+  flex: 48%;
+  border-radius: 25px;
 }
 /* dropdown and footer styles */
 .dropdown {
+  margin:0px;
   padding: 10px;
   position: relative;
   height: 250px;
@@ -129,6 +136,10 @@ h1 {
   #main h1 {
     font-size: 70px
   }
+  #main {
+   
+    clip-path: circle(48% at 50% 50%);
+  }
 }
 @media (max-width:800px) {
   #menu h2 {
@@ -146,5 +157,9 @@ h1 {
   }
   p {
     font-size: 15px
+  }
+  #main {
+   
+    clip-path: circle(39% at 50% 50%);
   }
 }

@@ -5,7 +5,8 @@
 }
 body {
   margin: 0;
-  font-family:  Helvetica,Arial,git sans-serif;
+    font-family:  "Arial ,sans-serif";
+  color: white ;
   background: #fff
 }
 h1 {
@@ -68,7 +69,7 @@ h1 {
 }
 #main h1 {
   text-align: center;
-  color: #fff;
+ /* color: #fff; */
   font-size: 100px;
   margin: 0;
   position: absolute;

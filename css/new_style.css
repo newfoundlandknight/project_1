@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  font-family: Arial;
+  font-family:  Helvetica,Arial,git sans-serif;
   background: #fff
 }
 h1 {
@@ -80,12 +80,12 @@ h1 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  text-align: justify;
+  text-align:left;
   
 }
 .flex-item-left {
   box-shadow: 10px 10px 11px #000;
-  margin: 3px;
+  margin: 25 px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: rgb(244, 138, 138);
@@ -112,7 +112,7 @@ h1 {
   top: 30px;
   text-align: left;
   color: #100101;
-  z-index: 1;
+  z-index: 10;
   display: none;
   box-shadow: 0 10px 11px #000
 }
@@ -136,6 +136,10 @@ h1 {
   #main h1 {
     font-size: 70px
   }
+  #main {
+   
+    clip-path: circle(48% at 50% 50%);
+  }
 }
 @media (max-width:800px) {
   #menu h2 {
@@ -156,6 +160,6 @@ h1 {
   }
   #main {
    
-    clip-path: circle(35% at 50% 50%);
+    clip-path: circle(39% at 50% 50%);
   }
 }

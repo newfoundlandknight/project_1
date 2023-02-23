@@ -74,7 +74,7 @@ h1 {
 #main h1 {
   text-align: center;
  /* color: #fff; */
-  font-size: 100px;
+  font-size: 3em;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -152,7 +152,7 @@ h1 {
     font-size: 1.5em;
   }
   #main h1 {
-    font-size: 70px
+    font-size: 2.9em;
   }
   #main {
        clip-path: circle(48% at 50% 50%);
@@ -163,7 +163,7 @@ h1 {
     font-size: 1.4em;
   }
   #main h1 {
-    font-size: 60px
+    font-size: 2.1em;
   }
   #main_text {
     margin: 1px 20px 10px 20px
@@ -176,6 +176,6 @@ h1 {
     font-size: 15px
   }
   #main {
-       clip-path: circle(39% at 50% 50%);
+       clip-path: circle(45% at 50% 50%);
   }
 }

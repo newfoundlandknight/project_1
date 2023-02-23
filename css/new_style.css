@@ -9,7 +9,7 @@ body {
   color: white ;
   background: #fff;
   box-sizing: border-box; 
-  width: 1200px;
+
 }
 h1 {
   text-align: center
@@ -57,13 +57,15 @@ h1 {
   width: 100%;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  max-width: 1200px;
 }
 
 #main_text {
   text-align: left;
   color: #100101;
   margin: 1px 20px 10px 20px
+  max-width: 1200px;
 }
 #main_text h3 {
   color: green;
@@ -72,7 +74,7 @@ h1 {
 #main h1 {
   text-align: center;
  /* color: #fff; */
-  font-size: 100px;
+  font-size: 3em;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -86,6 +88,8 @@ h1 {
   text-align:left;
   padding: 10px;
   margin: 25 px;
+  max-width: 1200px;
+  
 }
 .flex-item-left {
   box-shadow: 10px 10px 11px #000;
@@ -104,6 +108,16 @@ h1 {
   background-color: rgb(244, 138, 138);
   flex: 48%;
   border-radius: 25px;
+}
+.flex-item-full {
+  box-shadow: 10px 10px 11px #000;
+  margin: 3px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: rgb(244, 138, 138);
+  flex: 100%;
+  border-radius: 25px;
+  text-align: center;
 }
 /* dropdown and footer styles */
 .dropdown {
@@ -135,23 +149,21 @@ h1 {
 
 @media (max-width:1200px) {
   #menu h2 {
-    font-size: 20px;
-   
+    font-size: 1.5em;
   }
   #main h1 {
-    font-size: 70px
+    font-size: 2.9em;
   }
   #main {
-   
-    clip-path: circle(48% at 50% 50%);
+       clip-path: circle(48% at 50% 50%);
   }
 }
 @media (max-width:800px) {
   #menu h2 {
-    font-size: 20px
+    font-size: 1.4em;
   }
   #main h1 {
-    font-size: 60px
+    font-size: 2.1em;
   }
   #main_text {
     margin: 1px 20px 10px 20px
@@ -164,7 +176,6 @@ h1 {
     font-size: 15px
   }
   #main {
-   
-    clip-path: circle(39% at 50% 50%);
+       clip-path: circle(45% at 50% 50%);
   }
 }

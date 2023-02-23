@@ -7,14 +7,13 @@
     <title>Halifax Canoe and Kayak</title>
     <link href="/css/new_style.css" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="./images/paddle-white_icon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    
-    <script src="/js/basic.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script><!--pointer to jQuery LIB file -->
+    <script src="/js/basic.js" ></script><!--pointer to JS file -->
     
 </head>
 <body>
-    
-    <div id ="menu" class="menu"><!-- menu bar -->
+<nav><!-- menu bar -->
+    <div id ="menu" class="menu">
         <div class="img-container1">
             <img id ="burger" src="./images/hamburger.png" alt="menu">
         </div>
@@ -26,27 +25,27 @@
         <div class="img-container1">
             <img id ="paddle" src="./images/paddle-white.png" alt="paddle">
         </div>
-        <div id="dropdown1" class="dropdown"> <!--  the hidden menu -->
+        <!--  the hidden menu -->
+        <div id="dropdown1" class="dropdown"> 
             <a href="#">Home</a><br>
             <a href="#">Book Trip</a><br>
-            <a href="#">Admin Login</a>
+            <a href="#">Admin Login</a><br>
+           
         </div>
-    </div> 
-    
+    </div> <!--close menudiv -->
+</nav>    
 
 
   <!-- masthead image and text -->
     <div id ="main">
         <h1> Come Experience <br>CANADA! </h1>
-        
     </div>  
 <!-- the offered packages -->
     <div id="main_text">
-      
         <div class="flex-container">
-            <div class="flex-item-full">  <h2>Upcoming adventures</h2><div id="clicker_exmample">click me</div>
+            <div class="flex-item-full">  <h2>Upcoming adventures</h2>
             </div>
-            <div class="flex-item-left"><h3>Halifax</h3>
+            <div class="flex-item-left"><h3>Halifax</h3><!-- halifax section -->
                 <p>Date 2023-03-28</p>
                 <p>Duration 4 days</p>
                 <br>
@@ -62,7 +61,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et esse ipsa!
                 here is the text section</p>
             </div>
-            <div class="flex-item-right"><h3>Canso</h3><!-- sydney section -->
+            <div class="flex-item-left"><h3>Canso</h3><!-- canso section -->
                 <p>Date 2023-09-08</p>
                 <p>Duration 5 days</p>
                 <br>
@@ -71,7 +70,7 @@
                 here is the text section</p>
             </div>
             
-            <div class="flex-item-right"><h3 id ="template_h3"></h3><!-- template section -->
+            <div class="flex-item-right"><h3 id ="template_h3"><a href="#" id ="clicker_exmample">click me to generate new adventure</a></h3><!-- template section -->
                 <p id ="template_date"></p>
                 <p id ="template_dur"></p>
                 <br>
@@ -81,7 +80,7 @@
         </div>
 
     </div>
-    <!-- for later -->
+    <!-- for later 
 
 <div class="footer" ><div class="flex-container">
     <div class="flex-item-left"><h3>Contact</h3>
@@ -90,7 +89,7 @@
   
     </div>
 
-</div>
+</div>-->
 </div>
 </body>
 </html>

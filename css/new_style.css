@@ -149,20 +149,18 @@ h1 {
 
 @media (max-width:1200px) {
   #menu h2 {
-    font-size: 20px;
-   
+    font-size: 1.5em;
   }
   #main h1 {
     font-size: 70px
   }
   #main {
-   
-    clip-path: circle(48% at 50% 50%);
+       clip-path: circle(48% at 50% 50%);
   }
 }
 @media (max-width:800px) {
   #menu h2 {
-    font-size: 20px
+    font-size: 1.4em;
   }
   #main h1 {
     font-size: 60px
@@ -178,7 +176,6 @@ h1 {
     font-size: 15px
   }
   #main {
-   
-    clip-path: circle(39% at 50% 50%);
+       clip-path: circle(39% at 50% 50%);
   }
 }

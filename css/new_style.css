@@ -9,7 +9,7 @@ body {
   color: white ;
   background: #fff;
   box-sizing: border-box; 
-  width: 1200px;
+
 }
 h1 {
   text-align: center
@@ -57,13 +57,15 @@ h1 {
   width: 100%;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  max-width: 1200px;
 }
 
 #main_text {
   text-align: left;
   color: #100101;
   margin: 1px 20px 10px 20px
+  max-width: 1200px;
 }
 #main_text h3 {
   color: green;
@@ -86,6 +88,8 @@ h1 {
   text-align:left;
   padding: 10px;
   margin: 25 px;
+  max-width: 1200px;
+  
 }
 .flex-item-left {
   box-shadow: 10px 10px 11px #000;
@@ -104,6 +108,16 @@ h1 {
   background-color: rgb(244, 138, 138);
   flex: 48%;
   border-radius: 25px;
+}
+.flex-item-full {
+  box-shadow: 10px 10px 11px #000;
+  margin: 3px;
+  border: 1px solid #030000;
+  padding: 10px;
+  background-color: rgb(244, 138, 138);
+  flex: 100%;
+  border-radius: 25px;
+  text-align: center;
 }
 /* dropdown and footer styles */
 .dropdown {

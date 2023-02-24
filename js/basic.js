@@ -1,12 +1,15 @@
 $(document).ready(function(){
-    $("#burger").click(function(){
-$("#dropdown1").toggle("slow");
+    $("#burger").click(function(){// the toggle function using jQuery to listen to click events on the menu burger image and when triggered to toggle the dropdown
+    $("#dropdown1").toggle();
+});    
+    $("#burger").hover(function(){// the toggle function using jQuery to listen to hover events on the menu burger image and when triggered to toggle the dropdown
+    $("#dropdown1").toggle();
+
+
+    
 });
-});// the toggle function using jQuery to listen to click events on the menu burger image and when triggered to toggle the 
 
-$(document).ready(function(){
-    $("#clicker_exmample").click(function(){
-
+    $("#clicker_exmample").click(function(){// the toggle function using jQuery to listen to click events on the clicker_example and when triggered to write innerhtml
 
     //$("#dropdown1").toggle("slow");
     $("#template_h3").html("Somewhere in NS");
@@ -16,5 +19,10 @@ $(document).ready(function(){
     $("#template_summary_details").html(" amet consectetur adipisicing elit. Non ratione, at delectus earum sapiente corrupti assumenda pariatur ipsa dolorum laborum ut minus voluptas rem. Odit ducimus consequatur et esse ipsa! here is:");
 
 });
-});// the toggle function using jQuery to listen to click events on the menu burger image and when triggered to toggle the 
+
+
+
+});
+
+
 

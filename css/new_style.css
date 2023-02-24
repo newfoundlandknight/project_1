@@ -152,6 +152,9 @@ h1 {
   }
 }
 @media (max-width:800px) {
+  body {
+    background-color: var(--black);
+  }
   #menu h2 {
     font-size: 1.4em
   }

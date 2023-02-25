@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0
+  margin: 0px;
 }
 :root {
   --blue: rgb(232, 236, 245);
@@ -8,7 +8,7 @@
   --black: rgb(0,0,0)
 }
 body {
-  margin: 0;
+  margin: 0px;
   font-family: "Arial ,sans-serif";
   color: #fff;
   background: #fff;
@@ -92,13 +92,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  padding: 10px;
+  padding: 0px;
   margin: 25 px;
   max-width: 1200px
 }
 .flex-item-left {
   box-shadow: 10px 10px 11px #000;
-  margin: 3px;
+  margin: 8px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: var(--blue);
@@ -107,7 +107,7 @@ h1 {
 }
 .flex-item-right {
   box-shadow: 10px 10px 11px #000;
-  margin: 3px;
+  margin: 8px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: var(--blue);
@@ -116,7 +116,7 @@ h1 {
 }
 .flex-item-full {
   box-shadow: 10px 10px 11px #000;
-  margin: 3px;
+  margin: 8px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: var(--blue);

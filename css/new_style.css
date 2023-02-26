@@ -5,19 +5,19 @@
 :root {
   --blue: rgb(232, 236, 245);
   --white: rgb(255,255,255);
-  --black: rgb(0,0,0)
+  --black: rgb(0,0,0);
 }
 body {
   margin: 0px;
   font-family: "Arial ,sans-serif";
   color: #fff;
-  background: #fff;
+  background: rgb(255, 255, 255);
   box-sizing: border-box;
 
   /*transform: translate(0%,0%)*/
 }
 h1 {
-  text-align: center
+  text-align: center;
 }
 .menu {
   position: relative;
@@ -25,11 +25,11 @@ h1 {
   height: 35px;
   box-shadow: 0 10px 11px #000;
   /*max-width: 1200px; */
-  z-index: 200
+  z-index: 200;
 }
 .menu #paddle {
   height: 30px;
-  float: right
+  float: right;
 }
 .menu #burger {
   height: 30px;
@@ -45,7 +45,7 @@ h1 {
   height: 40px;
   float: left;
   width: 13.33%;
-  padding: 5px
+  padding: 3px 10px 3px 10px
 }
 #menu h2 {
   text-align: center;
@@ -58,8 +58,7 @@ h1 {
   clip-path: circle(60% at 50% 50%);
   background-color: #ccc;
   height: 500px;
-  width: 100%;
-  background-position: right;
+    background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -76,7 +75,11 @@ h1 {
 }
 #main_text h3 {
   color: green;
-  text-decoration: underline
+  text-decoration: underline;
+  font-size: 2em;
+  text-transform: uppercase;}
+#main_text h2 {
+  font-size: 2.5em;
 }
 #main h1 {
   text-align: center;
@@ -93,7 +96,7 @@ h1 {
   flex-wrap: wrap;
   text-align: left;
   padding: 0px;
-  margin: 25 px;
+  margin: 5 px;
   max-width: 1200px
 }
 .flex-item-left {
@@ -116,14 +119,14 @@ h1 {
 }
 .flex-item-full {
   box-shadow: 10px 10px 11px #000;
-  margin: 8px;
+  
   margin: 0px 8px 8px 8px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: var(--blue);
   flex: 100%;
   border-radius: 10px;
-  height: 60px;
+  height: 100%;
   text-align: center
 }
 .dropdown {
@@ -144,10 +147,13 @@ h1 {
   color: #fff
 }
 .footer {
+  position: fixed;
+  left: 0px;
+  bottom: 00px;
   width: 100%;
+  background-color: red;
+  color: white;
   text-align: center;
-  color: #000;
-  margin: 25 px
 }
 @media (max-width:1200px) {
   #menu h2 {
@@ -168,7 +174,7 @@ h1 {
     font-size: 1.4em
   }
   #main h1 {
-    font-size: 1.9em
+    font-size:2.9em
   }
   #main_text {
     margin: 1px 20px 10px 20px
@@ -181,7 +187,16 @@ h1 {
     font-size: 15px
   }
   #main {
-    clip-path: circle(45% at 50% 50%);
-    clip-path: circle(100% at 50% 50%)
+    clip-path: circle(79% at 50% 50%);
+
+  }
+  #main_text h2 {
+    font-size: 1.8em;
+    
+    }
+  .flex-item-full {
+
+    padding: 10px;
+ 
   }
 }

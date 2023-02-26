@@ -1,7 +1,7 @@
 // the toggle function using jQuery to listen to click events on the menu burger image and when triggered to toggle the dropdown
 $(document).ready(function(){
     $("#burger").click(function(){
-    $("#dropdown1").toggle();
+    $("#dropdown1s").toggle();
     });    
 
 // the toggle function using jQuery to listen to hover events on the menu burger image and when triggered to toggle the dropdown

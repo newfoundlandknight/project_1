@@ -1,20 +1,22 @@
+/* universal styles */
 * {
   box-sizing: border-box;
   margin: 0px;
+  padding: 0px;
 }
 :root {
   --blue: rgb(232, 236, 245);
   --white: rgb(255,255,255);
   --black: rgb(0,0,0);
 }
+
+/* main body elements */
 body {
   margin: 0px;
   font-family: "Arial ,sans-serif";
   color: #fff;
   background: rgb(255, 255, 255);
   box-sizing: border-box;
-
-  /*transform: translate(0%,0%)*/
 }
 h1 {
   text-align: center;
@@ -58,7 +60,7 @@ h1 {
   clip-path: circle(60% at 50% 50%);
   background-color: #ccc;
   height: 500px;
-    background-position: right;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -70,7 +72,7 @@ h1 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  color: #100101;
+  color: #000000;
   max-width: 1200px
 }
 #main_text h3 {
@@ -91,6 +93,7 @@ h1 {
   left: 50%;
   transform: translate(-50%,-50%)
 }
+/* flex styles  */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -119,7 +122,6 @@ h1 {
 }
 .flex-item-full {
   box-shadow: 10px 10px 11px #000;
-  
   margin: 0px 8px 8px 8px;
   border: 1px solid #030000;
   padding: 10px;
@@ -129,6 +131,7 @@ h1 {
   height: 100%;
   text-align: center
 }
+/* the hidden menu */
 .dropdown {
   margin: 0;
   padding: 10px;
@@ -147,15 +150,10 @@ h1 {
   color: #fff
 }
 .footer {
-  position: fixed;
-  left: 0px;
-  bottom: 00px;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+ 
 }
-@media (max-width:1200px) {
+/*  style to be applied at 1200 to 800 pxs */
+@media only screen and (max-width:1200px) {
   #menu h2 {
     font-size: 1.5em
   }
@@ -166,7 +164,8 @@ h1 {
     clip-path: circle(48% at 50% 50%)
   }
 }
-@media (max-width:800px) {
+/*  style to be applied at 800 px and less */
+@media only screen and (max-width:800px) {
   body {
     background-color: var(--black);
   }

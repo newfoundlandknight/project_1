@@ -1,87 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-  padding:0px;
-  margin: 0px;
-
-  }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;  
-  color: #fff;
-  background: rgb(255, 255, 255);
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 0px;
-  text-align: center;
-  font-size: 25px;
-}
-.img-container {
-  height: 40px;
-  float: left;
-  width: 73.33%;
-  padding: 5px
-}
-.img-container1 {
-  height: 40px;
-  float: left;
-  width: 13.33%;
-  padding: 3px 10px 3px 10px
-}
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Left and right column */
-.column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-}
-
-/* Middle column */
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halifax Canoe and Kayak</title>
+    <link href="./css/style.css" rel="stylesheet"> 
+    <link rel="icon" type="./image/x-icon" href="images/paddle-white_icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script><!--pointer to jQuery LIB file -->
+    <script src="./js/basic.js" ></script><!--pointer to JS file -->
+    
 </head>
 <body>
 
-<div class="header">
+
+
+  <div class="header">
     <div class="img-container1">
         <img id ="burger" src="images/hamburger.png" alt="menu">
     </div>
@@ -94,23 +28,51 @@ body {
         <img id ="paddle" src="images/paddle-white.png" alt="paddle">
     </div>
     <!--  the hidden menu -->
-    <div id="dropdown1" class="dropdown"> 
-        <a href="#">Home</a><br>
-        <a href="#">Book Trip</a><br>
-        <a href="#">Admin Login</a><br>
+    <div id="dropdown1" class="dropdown"> <br><br>
+        <div class="button"><a href="#">Home</a></div>
+        <div class="button"><a href="#">Home</a></div>
+        <div class="button"><a href="#">Book Trip</a></div>
        
+        <div class="button"><a href="#">Admin Login</a></div>
     </div>
 </div>
 
-<div class="row">
+
+
+
+
+<div id ="main" class="main">
+  <h1> Come Experience <br>CANADA </h1>
+</div>
+<div id ="content">
+  <p>Join us in 2023 as we celebrate Kayak Halifax’s 10th anniversary of providing authentic East Coast Experiences and local hospitality in Nova Scotia’s vibrant capital city.</p><br>
+
+  <p> No car. No problem. We are located walking distance, public bus or Uber from downtown Halifax hotels, restaurants and attractions yet it feels a world apart from the hustle and bustle. </p><br>
+  
+  <p> You’ll fall in love with our beautiful location and our own urban wilderness home to white tail deer, ospreys and more. We are a stone’s throw from Point Pleasant Park on the scenic Northwest Arm dotted with sailboats, marinas and the rugged Atlantic coastline. 
+  Paddle with us to discover Seal Cove, Sir Sanford Fleming Park, Dead Man’s Island, Point Pleasant Park &/or McNabs Island Provincial Park. </p><br>
+
+  <p>Wildlife encounters may include white tail deer, harbour & grey seals, harbour porpoise, whales, sea stars (*starfish), blue heron, common eiders, ospreys, bald eagles and shorebirds. </p><br>
+
+  <p>You’ll love our good nature.</p></div>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>Footer</p><div class="row">
   <div class="column side" style="background-color:#aaa;">Column</div>
   <div class="column middle" style="background-color:#bbb;">Column</div>
   <div class="column side" style="background-color:#ccc;">Column</div>
 </div>
-
-<div class="footer">
-  <p>Footer</p>
 </div>
-
 </body>
 </html>
+
+

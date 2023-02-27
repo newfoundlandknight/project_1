@@ -1,13 +1,11 @@
 // the toggle function using jQuery to listen to click events on the menu burger image and when triggered to toggle the dropdown
 $(document).ready(function(){
     $("#burger").click(function(){
-    $("#dropdown1s").toggle();
+    $(".dropdown").toggle();
     });    
 
 // the toggle function using jQuery to listen to hover events on the menu burger image and when triggered to toggle the dropdown
-    $("#burger").hover(function(){
-    $("#dropdown1").toggle();   
-    });
+  //  $("#burger").hover(function(){ $("#dropdown1").toggle();       });
 
 // the toggle function using jQuery to listen to click events on the clicker_example and when triggered to write innerhtml
     $("#clicker_exmample").click(function(){

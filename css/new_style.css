@@ -21,6 +21,11 @@ body {
 h1 {
   text-align: center;
 }
+h4 {
+  font-weight: lighter;
+  text-transform:unset ;
+  font-size: 20px
+}
 .menu {
   position: relative;
   background: #4855a0;
@@ -78,10 +83,10 @@ h1 {
 #main_text h3 {
   color: green;
   text-decoration: underline;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;}
 #main_text h2 {
-  font-size: 2.5em;
+  font-size: 35px;
 }
 #main h1 {
   text-align: center;
@@ -120,21 +125,25 @@ h1 {
   flex: 48%;
   border-radius: 10px
 }
+.bare {  height: 100%;
+  text-align: center;
+  /*box-shadow: none;*/
+}
 .flex-item-full {
   box-shadow: 10px 10px 11px #000;
-  margin: 0px 8px 8px 8px;
+  margin: 4px 8px 8px 8px;
   border: 1px solid #030000;
   padding: 10px;
   background-color: var(--blue);
   flex: 100%;
   border-radius: 10px;
   height: 100%;
-  text-align: center
+  text-align: center;
 }
 /* the hidden menu */
 .dropdown {
   margin: 0;
-  padding: 10px;
+ 
   position: relative;
   height: 250px;
   width: 180px;
@@ -142,16 +151,73 @@ h1 {
   top: 30px;
   text-align: left;
   color: #100101;
-  z-index: 10;
+  z-index:-1;
   display: none;
   box-shadow: 0 10px 11px #000
 }
 .dropdown a {
   color: #fff
 }
-.footer {
+
+
+
+.button {
  
+  border-style: solid;
+  border-width : 1px 1px 1px 1px;
+  border-radius: 5px;
+  border-color : #000000;
+  cursor: pointer;
+
+  padding: 4px;
+  margin:5px;
+  position:unset;
+  line-height: 30px;
+  background: #4E9CAF;
+  text-align: center;
+
+}  .dropdown a {
+  text-decoration: none;
 }
+.dropdown a:focus,
+.dropdown .button:hover {
+background-color: FireBrick;
+color: White;
+}
+.footer {
+  margin: 10px;
+  margin-top: 20px;;
+  height:100px;
+  padding: 0px;
+  background-color: var(--blue);
+}
+
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three unequal columns that sits next to each other */
+  .column {
+    padding: 10px;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Left and right column */
+  
+  .column.side {
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
 /*  style to be applied at 1200 to 800 pxs */
 @media only screen and (max-width:1200px) {
   #menu h2 {
@@ -183,7 +249,7 @@ h1 {
     flex: 100%
   }
   p {
-    font-size: 15px
+    font-size: .9em;
   }
   #main {
     clip-path: circle(79% at 50% 50%);

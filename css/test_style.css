@@ -1,3 +1,4 @@
+/* universal styles  */
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -91,7 +92,7 @@ section {
     
 }
 
-
+/* main images and text for masthead */
 #main {
   position: relative;
   background-image: url("../images/canoe.jpg");
@@ -170,6 +171,8 @@ section {
   height: 100%;
   text-align: center;
 }
+
+/* break points */
 @media screen and (max-width: 1200px) {
     header h1 {
         font-size: 25px;

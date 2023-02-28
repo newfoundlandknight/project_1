@@ -143,21 +143,19 @@ h4 {
 /* the hidden menu */
 .dropdown {
   margin: 0;
- 
+  top: 34px;
   position: relative;
   height: 250px;
   width: 180px;
   background-color: #4855a0;
-  top: 30px;
+  
   text-align: left;
   color: #100101;
   z-index:-1;
   display: none;
   box-shadow: 0 10px 11px #000
 }
-.dropdown a {
-  color: #fff
-}
+
 
 
 
@@ -177,7 +175,8 @@ h4 {
   text-align: center;
 
 }  .dropdown a {
-  text-decoration: none;
+  text-decoration: none;  
+  color: #fff
 }
 .dropdown a:focus,
 .dropdown .button:hover {
